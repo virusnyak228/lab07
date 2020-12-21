@@ -1,27 +1,23 @@
-#include <stdbool.h>
-#include <stdlib.h>
-/**
- * @file lab07.c виконати завдання 1
- * 
- * виконати сортування масиву
- */
+#include<stdio.h>
 
-/**
- * сортування масиву методом "бульбашки"
- * @param n - розмір масиву;
- * @param arr - масив;
- **/
-int main()
+/* sorting an array using the bubble method*/
+
+void some_function( int A[])
 {
- /**
- * кількість елементів масиву
- */ 
-	int arr[5]={5,4,10,4,5}; 	/* arr - array; size array */
+A[0];
+A[10]=10; //ERROR!
+}
+int main ()
+ {
+ 
+    int arr[5]= {5,4,10,4,5}; 	/* arr - array; size array */
 	
 	int i=0;
 	int j=0;
 	int q;
-	
+
+
+
 	for ( i = 0; i < 5 - 1; i++ ) {
 		for ( j = 0; j < 5 - i - 1; j++) {
 			if (arr[j] >  arr[j + 1]) {
@@ -32,9 +28,10 @@ int main()
 			}
 		}
 	}
-	
 	for ( i = 0; i < 5; i++) {
+		some_function (arr);
 		printf (" %d ",arr[i]);
 		}
+
 	return 0;
 	}
